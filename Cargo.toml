@@ -1,0 +1,17 @@
+[package]
+name = "pisa-jr"
+version = "0.1.0"
+authors = ["Michal Siedlaczek <michal.siedlaczek@nyu.edu>"]
+edition = "2018"
+
+[dependencies]
+paw = "1.0"
+structopt = { version = "0.3", features = [ "paw" ] }
+
+[[bin]]
+name = "index"
+path = "src/index.rs"
+
+[[bin]]
+name = "search"
+path = "src/search.rs"
