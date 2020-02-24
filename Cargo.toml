@@ -7,6 +7,7 @@ edition = "2018"
 [dependencies]
 paw = "1.0"
 structopt = { version = "0.3", features = [ "paw" ] }
+itertools = "0.8"
 
 [[bin]]
 name = "index"
