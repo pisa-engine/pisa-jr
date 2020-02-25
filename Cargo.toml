@@ -8,6 +8,7 @@ edition = "2018"
 structopt = "0.3"
 itertools = "0.8"
 trec-text = { git = "https://github.com/pisa-engine/trec-text-rs.git", branch = "master" }
+libflate = "0.1"
 
 [[bin]]
 name = "index"
