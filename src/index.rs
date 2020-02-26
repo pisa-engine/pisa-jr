@@ -1,4 +1,5 @@
 use libflate::gzip::Decoder;
+use pisa_jr::clean_text;
 use std::fs::File;
 use std::io::{BufReader, Read};
 use std::path::PathBuf;
@@ -39,7 +40,7 @@ fn main() {
             println!(
                 "{}: {}",
                 String::from_utf8_lossy(doc.docno()),
-                String::from_utf8_lossy(doc.content())
+                clean_text(&String::from_utf8_lossy(doc.content()))
             );
         }
     }
